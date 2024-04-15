@@ -1,0 +1,60 @@
+.header-section {
+    background: color(SeconderyColor);
+}
+
+.top-header {
+    padding: 17px 0px;
+    border-bottom: 1px solid #404057;
+
+    p {
+        margin-bottom: 0px;
+        @include textStyle(18px, 500, 26px);
+        color: color(whiteColor);
+
+        a {
+            color: color(primaryColor);
+        }
+    }
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include textStyle(20px, 700, normal);
+    padding: 20px 0px;
+    color: color(whiteColor);
+
+    .menu-list {
+        max-width: 598px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                a {
+                    padding: 15px 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: 0.4s;
+                    &:hover, &.active{
+                        background: color(primaryColor);
+                    }
+                }
+            }
+        }
+    }
+    
+    .header-btn {
+        padding: 15px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: color(primaryColor);
+    }
+}

@@ -1,0 +1,165 @@
+.wt-400{
+    font-weight: 400 !important;
+}
+
+.wt-500{
+    font-weight: 500 !important;
+}
+
+.wt-600{
+    font-weight: 600 !important;
+}
+
+.wt-700{
+    font-weight: 700 !important;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+.ml-12{
+    margin-left: 12px;
+}
+
+.mx-auto{
+    margin: 0px auto;
+}
+.p-0{
+    padding: 0px !important;
+}
+.m-0{
+    margin: 0px !important;
+}
+.uppercase{
+    text-transform: uppercase !important;
+}
+.flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.no-border{
+    border: none !important;
+}
+
+*:focus {
+    outline: none;
+}
+img {
+    max-width: 100%;
+}
+
+body .mt--60 {
+    margin-top: -60px;
+}
+.xl-mb-10 {
+    margin-bottom: 10px;
+}
+.xl-mb-20 {
+    margin-bottom: 20px;
+}
+.xl-mb-25 {
+    margin-bottom: 25px;
+}
+.xl-mb-30 {
+    margin-bottom: 30px !important;
+}
+.xl-mb-40 {
+    margin-bottom: 40px !important;
+}
+.xl-pl-0 {
+    padding-left: 0;
+}
+.max-w-100{
+    max-width: 100% !important;
+}
+::selection {
+    background-color: color(primaryColor);
+    color: color(whiteColor);
+}
+.row-gap50 {
+    row-gap: 50px;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.bg-none{
+    background: transparent !important;
+}
+a,
+.btn,
+button {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
+    &:focus {
+        text-decoration: none;
+        color: inherit;
+        outline: none;
+        border: none;
+    }
+}
+button,
+input[type="submit"] {
+    cursor: pointer;
+}
+
+button {
+    border-radius: 0;
+    border: 0;
+    background-color: transparent;
+}
+.btn {
+    border: none;
+    outline: none;
+    border-radius: 0;
+}
+.bg-primary{
+    background: color(primaryColor) !important;
+}
+.slick-track{
+    cursor: grab;
+}
+.avater{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+        position: absolute;
+        height: 100%;
+        width: 100%;object-fit: cover
+
+    }
+}
+
+@media (min-width: 1440px) {
+    .container{
+        max-width: 1360px;
+        width: 100%;
+        padding: 0px 20px;
+        margin: auto;
+    }
+}

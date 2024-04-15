@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    color: color(textColor);
+    @include textStyle(15px, 600, 25px);
+    font-family: fontfamily(mulish);
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: fontfamily(chivo);
+    line-height: normal;
+    color: color(SeconderyColor);
+}
+h1{
+    font-size: 60px;
+}
+h2{
+    font-size: 35px;
+}
+h3{
+    font-size: 28px;
+}
+h4{
+    font-size: 24px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 16px;
+}
+
+.custom-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+

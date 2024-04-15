@@ -1,0 +1,60 @@
+.funfect-section {
+    padding: 110px 0px;
+}
+
+.funfect-card {
+    background: color(offwhite);
+    padding: 54px 87px;
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        border-bottom: 50px solid transparent;
+        border-right: 14px solid transparent;
+        border-left: 53px solid color(whiteColor);
+
+    }
+
+    &::before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+        border-top: 50px solid transparent;
+        border-left: 14px solid transparent;
+        border-right: 53px solid color(whiteColor);
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0x -5px;
+
+        li {
+            width: max-content;
+            padding: 0px 5px;
+
+            h5 {
+                color: color(primaryColor);
+                font-weight: 700;
+                font-family: fontfamily(mulish);
+                margin-bottom: 0px;
+                margin-bottom: -12px;
+            }
+
+            h2 {
+                margin-bottom: 0px;
+                @include textStyle(60px, 600, 133%);
+            }
+        }
+    }
+}

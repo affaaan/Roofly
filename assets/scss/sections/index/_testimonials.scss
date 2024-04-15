@@ -1,0 +1,119 @@
+.testimonials-section{
+    padding: 110px 0px;
+}
+.testimonials-content{
+    position: relative;
+    padding-top: 50px;
+    .slick-list{
+        overflow: hidden;
+    }
+    .slick-track{
+        display: flex;
+    }
+
+    .slick-next{
+        position: absolute;
+        right: 0px;
+        left: auto;
+        z-index: 111;
+        top: 0px;
+        bottom: auto;
+        height: 50px;
+        width: 80px;
+        border-radius: 50px;
+        background: color(offwhite);
+        z-index: 1;
+        &::before{
+            content: url(../images/icons/slide-arrow-next.svg);
+            filter: brightness(0);
+        }
+        &:hover{
+            background: color(primaryColor);
+            &::before{
+                filter: brightness(100);
+            }
+        }
+    }
+    .slick-prev{
+        position: absolute;
+        right: 100px;
+        left: auto;
+        z-index: 111;
+        height: 50px;
+        width: 80px;
+        border-radius: 50px;
+        background: color(offwhite);
+        top: 0px;
+        bottom: auto;
+        z-index: 1;
+        &::before{
+            content: url(../images/icons/slide-arrow-prev.svg);
+            filter: brightness(0);
+        }
+        &:hover{
+            background: color(primaryColor);
+            &::before{
+                filter: brightness(100);
+            }
+        }
+    }
+}
+.testmonials-slide{
+    .review-stars{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+        margin-bottom: 41px;
+    }
+    p{
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #C5C7D1;
+    }
+}
+
+.testimonials-slider-nav{
+    .slick-track{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .slick-slide {
+            width: auto !important;
+            margin-left: -20px;
+            &:nth-child(1){
+                margin-left: 0px
+            };
+            &.slick-current{
+                &.slick-active{
+                    .client-profile{
+                        .client-data{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .client-profile{
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
+        .avater{
+            height: 60px;
+            width: 60px;
+        }
+        .client-data{
+            padding-left: 20px;
+            padding-right: 40px;
+            display: none;
+            h5{
+                margin-bottom: 0px;
+            }
+            p{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}

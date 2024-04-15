@@ -1,0 +1,72 @@
+
+@charset "UTF-8";
+/*---------------------------------------------------
+Theme Name: Roofly
+Theme URL: #
+Author: ??
+Author URL: ??
+version: 1.0.0
+------------------------------------------------------*/
+
+/*----------------------------------------------------
+CSS table of content
+
+01. Settings style
+02. Base style
+03. Sections style
+04. Components style
+05. Utilities style
+------------------------------------------------------------------------------------*/
+
+/*====== import fonts ======*/
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+/*====== Settings style ======*/
+@import './settings/variables';
+
+/*====== utilities style ======*/
+@import './utilities/utilites';
+
+/*====== Reset style ======*/
+@import './helper/reset.all';
+
+/*====== Component style ======*/
+@import './component/btn-style';
+@import './component/section-title';
+@import './component/funfect';
+@import './component/breadcumbs';
+
+
+
+/*====== header style ======*/
+@import './sections/header/header';
+
+
+/*====== Banner style ======*/
+@import './sections/banners/index-banner';
+
+
+/*====== Index style ======*/
+@import './sections/index/feature';
+@import './sections/index/recent-project';
+@import './sections/index/testimonials';
+
+/*====== about us style ======*/
+@import './sections/about-us/about-us';
+@import './sections/about-us/choseus';
+
+/*====== Blog style ======*/
+@import './sections/blog/latest-blog';
+
+/*====== team style ======*/
+@import './sections/team/team';
+
+/*====== services style ======*/
+@import './sections/services/services';
+@import './sections/services/serivce-video';
+
+
+/*====== Footer style ======*/
+@import './sections/footer/footer';

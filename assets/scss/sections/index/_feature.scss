@@ -1,0 +1,94 @@
+.feature-section {
+    padding: 110px 0px;
+}
+
+.feature-card {
+    padding: 30px;
+    background: color(whiteColor);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: 0.4s;
+    cursor: pointer;
+    h4 {
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-family: fontfamily(mulish);
+        font-weight: 700;
+    }
+
+    p {
+        margin-bottom: 30px;
+    }
+
+    .feature-card-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 30px;
+        background: color(offwhite);
+        border-radius: 50px;
+        max-width: 80px;
+        width: 100%;
+        transition: 0.4s;
+
+        img {
+            transition: 0.4s;
+        }
+    }
+
+    .feature-card-img {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        height: 76px;
+        width: 76px;
+        background: color(offwhite);
+
+        .feature-card-img-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            img {
+                transition: 0.4s;
+            }
+
+            &::after {
+                content: '';
+                width: 0;
+                height: 0;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                border-bottom: 14px solid transparent;
+                border-right: 14px solid transparent;
+                border-left: 16px solid color(whiteColor);
+            }
+        }
+    }
+
+    &:hover {
+        &::after {
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-bottom: 47px solid transparent;
+            border-right: 47px solid transparent;
+            border-left: 53px solid color(primaryColor);
+        }
+        
+        .feature-card-btn,
+        .feature-card-img {
+            background: color(primaryColor);
+
+            img {
+                filter: brightness(100);
+            }
+        }
+
+    }
+}

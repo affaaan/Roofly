@@ -1,0 +1,24 @@
+.mid-btn{
+    @include textStyle(20px, 700, normal);
+    font-family: fontfamily(mulish);
+    padding: 17px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.4s;
+    .icon{
+        transition: 0.4s;
+    }
+    &:hover{
+        .icon{
+            transform: rotate(-45deg);
+        }
+    }
+    &.bg-primary{
+        color: color(whiteColor);
+    }
+    &.bg-white{
+        color: color(SeconderyColor);
+    }
+}

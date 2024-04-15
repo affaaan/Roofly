@@ -1,0 +1,53 @@
+.service-video-section {
+    padding-bottom: 110px;
+}
+
+.service-video-tab {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-tab-video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .video-play-btn {
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+.service-video-tab-list {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: -80px;
+    .nav-link {
+        border: none;
+        outline: none;
+        padding: 23px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        @include textStyle(20px, 700, normal);
+        background: color(offwhite);
+        border-radius: 0px;
+        color: color(SeconderyColor);
+        img {
+            width: 28px;
+        }
+        &.active{
+            background: color(primaryColor);
+            color: color(whiteColor);
+            img{
+                filter: brightness(100);
+            }
+        }
+    }
+}

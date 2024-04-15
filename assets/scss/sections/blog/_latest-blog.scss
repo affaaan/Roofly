@@ -1,0 +1,105 @@
+.latest-blog-section{
+    padding: 110px 0px;
+}
+.latest-blog-content{
+    margin-top: 50px;
+}
+.blog-card{
+    background: color(whiteColor);
+    box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    &::after{
+        content: '';
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            padding: 2px 0px;
+            background: transparent;
+            transition: 0.4s;
+    }
+    .blog-img{
+        position: relative;
+        &::after{
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            border-bottom: 147px solid transparent;
+            border-right: 14px solid transparent;
+            border-left: 152px solid color(whiteColor);
+            z-index: 0;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border-bottom: 130px solid transparent;
+            border-right: 14px solid transparent;
+            border-left: 135px solid color(SeconderyColor);
+            z-index: 1;
+            transition: 0.4s;
+        }
+        .blog-date{
+            position: absolute;
+            top: 10px;
+            left: 15px;
+            z-index: 2;
+            h2{
+                color: color(whiteColor);
+                margin: 0px;
+            }
+            h5{
+                color: color(whiteColor);
+                margin: 0px;
+                font-weight: 700;
+                font-family: fontfamily(mulish);
+            }
+        }
+    }
+    .blog-text{
+        padding-top: 30px;
+        padding-bottom: 0px;
+        p{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            flex-wrap: wrap;
+            span{
+                padding-right: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 10px;
+            }
+        }
+        h4{
+            margin-top: 20px;
+            transition: 0.4s;
+        }
+    }
+    &:hover{
+        &::after{
+            background: color(primaryColor);
+        }
+        .blog-img{
+            &::before{
+                border-left: 135px solid color(primaryColor);
+            }
+        }
+        .blog-text{
+            h4{
+                color: color(primaryColor);
+            }
+        }
+    }
+}

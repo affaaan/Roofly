@@ -1,0 +1,44 @@
+/*-- font family included --*/
+/*-- Chivo font family --*/
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap');
+$chivoFont: "Chivo", sans-serif;
+
+/*-- Mulish font family --*/
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+$mulishFont: "Mulish", sans-serif;
+
+//font family functions
+@function fontfamily($key) {
+    //font family map
+    $fontFamily: (
+        chivo: $chivoFont,
+        mulish: $mulishFont,
+    );
+
+@return map-get($fontFamily, $key);
+}
+
+//color function
+@function color($key) {
+    //colors map
+    $colors: (
+        whiteColor: #ffffff,
+        offwhite: #F4F5FA,
+        borderColor: #C5C7D1,
+        blackColor: #000000,
+        SeconderyColor: #171717,
+        primaryColor: #EC3848,
+        primaryColor2: var(--Button-Color-02, linear-gradient(90deg, #EC3848 0%, #FF5C00 100%)),
+        primaryColor3: #246BFD,
+        textColor: #757588,
+    );
+
+@return map-get($colors, $key);
+}
+
+//text style mixin
+@mixin textStyle($fontSize, $fontWeight, $lineHeight) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+}
